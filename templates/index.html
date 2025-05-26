@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NLLB Translator</title>
+</head>
+<body>
+  <h1>Translate with Your AI Model</h1>
+  <form method="POST">
+    <textarea name="input_text" rows="5" cols="60" placeholder="Enter text here..."></textarea><br><br>
+
+    <label for="lang_code">Translate to:</label>
+    <select name="lang_code">
+      <option value="yor_Latn">Yoruba</option>
+      <option value="ibo_Latn">Igbo</option>
+      <option value="hau_Latn">Hausa</option>
+      <option value="eng_Latn">English</option>
+    </select><br><br>
+
+    <input type="submit" value="Translate">
+  </form>
+
+  <h2>Translation:</h2>
+  <p>{{ translation }}</p>
+</body>
+</html>
